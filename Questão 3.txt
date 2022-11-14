@@ -1,9 +1,0 @@
-Resultado Esperado - Inadimplentes
-select NOME, Day(DT_PAGAMENTO) as DIA_MES, VALOR_PARCELA
-from pessoas p, pagamentos pg, contratos c
-where INADIMPLENTE = 'S' and p.contrato_id = c.id and pg.pessoa_id = p.id;
---------------------------------------------------------------------------
-Resultado Esperado - Pagamento completo
-select NOME, SUM(VALOR_PARCELA * PARCELAS) as VALOR_TOTAL
-from pessoas p, pagamentos pg, contratos c
-where INADIMPLENTE = 'N' and p.contrato_id = c.id and pg.pessoa_id = p.id;
