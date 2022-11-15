@@ -1,10 +1,10 @@
 import React from 'react';
-import Menu from './components/molecules/Menu/index';
+import Header from './components/organisms/Header';
 
 function App() {
   return (
     <div>
-      <Menu/>
+      <Header/>
     </div>
   );
 }

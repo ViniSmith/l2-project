@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Sora:wght@600&display=swap');
+
+.bodyHeader {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../../../public/images/backgroundH.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.content {
+    margin-top: 5vw;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url("../../../../public/images/iconsH.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titlesContainer {
+    margin: 37px 0px;
+    text-align: center;
+}
+
+.titles {
+    line-height: 175%;
+    text-align: center;
+    color: white;
+    font-size:48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    color: #7780A1;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.firstTitle{
+    margin-left: -5vw;
+}
+
+.secondTitle{
+    margin-right: -5vw;
+}
+
+
+.patrocinio {
+    padding-bottom: 2.5vw;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    gap: 110px
+}
+
