@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sora';
+    margin: 32px 40px 0px 40px;    
+
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 64px;
+    color: #7780A1;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+}
+

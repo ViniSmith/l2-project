@@ -1,8 +1,10 @@
+import React from 'react';
+import Menu from './components/molecules/Menu/index';
 
 function App() {
   return (
     <div>
-      <h1>TEST</h1>
+      <Menu/>
     </div>
   );
 }
