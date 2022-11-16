@@ -25,6 +25,7 @@ body {
     padding: 0;
     background-color: #060714;
     font-family: 'Sora';
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,4 +43,13 @@ ul {
 
 button{
     font-family: 'Sora', 'sans-serif';
+}
+
+img {
+    user-select: none;
+}
+
+body *::selection{
+    background-color: #2427c9;
+    color: white;
 }
