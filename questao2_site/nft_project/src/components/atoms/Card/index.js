@@ -21,7 +21,7 @@ const Card = ({cardData}) => {
                         ))}
                     </ul>
                     <p>{cardData.bidding} people are bidding</p>
-                    <p><img className="icon" src="/images/heart-icon.svg" alt="heart"/>{cardData.likes}</p>
+                    <span><img src={(cardData.wasLiked)?"/images/heart-icon.svg" : "/images/heart-empty-icon.svg" } alt="heart"/>{cardData.likes}</span>
                 </div>
                 
             </div>

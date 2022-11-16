@@ -1,0 +1,15 @@
+.icons-graph {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle-icons {
+    font-size: 48px;
+
+}
+
+.icons-graph p {
+    font-family: 'Inter';
+    font-weight: 400;
+    color: ;
+}

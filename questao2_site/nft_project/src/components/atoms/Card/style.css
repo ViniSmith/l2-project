@@ -9,7 +9,7 @@
     color: white;
     justify-self: stretch;
     align-content: stretch;
-    grid-template-rows: 4fr 120px 60px 60px;
+    grid-template-rows: 5fr 160px 40px 60px;
 }
 
 .card-img {
@@ -103,7 +103,7 @@
     max-width: 440px;
 }
 
-.footer-card p {
+.footer-card p, .footer-card span {
     font-family: 'Inter';
     font-weight: 400;
     letter-spacing: 0.0125rem;
