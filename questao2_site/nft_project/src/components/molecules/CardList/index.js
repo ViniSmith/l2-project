@@ -5,15 +5,17 @@ import "./style.css";
 const CardList = ({ cards }) => {
 
     return (
-        <div className="card-row" >
-            {cards.map((item, key) => (
-                <Card key={key} cardData={item} />
+        <section className="card-section" >
+            <div className="title-section">
+                <h2>Latest live auctions</h2>
+            </div>
+            <div className="card-row">
+                {cards.map((item, key) => (
+                    <Card key={key} cardData={item} />
 
-            ))
-
-            }
-
-        </div>
+                ))}
+            </div>
+        </section>
 
     )
 }

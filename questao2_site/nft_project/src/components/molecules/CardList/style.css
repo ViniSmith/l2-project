@@ -6,3 +6,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.title-section {
+    font-size: 36px;
+    margin: 100px 0px 30px;
+    text-align: center;
+    display: block;
+    color: white;
+    padding-bottom: 50px;
+}
