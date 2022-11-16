@@ -46,18 +46,35 @@
 .left-icons {
     left: 0;
     clip-path: polygon(0% 0%,
-    50% 0%,
-    50% 100%,
-     0% 100%);
+        50% 0%,
+        50% 100%,
+        0% 100%);
+    animation: iconsAnimation 6s ease-in-out ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes iconsAnimation {
+    0%{top: 0px;}
+    50%{top: 50px;}
+    100%{top: 0px}
+}
+
+@keyframes iconsAnimationRevert {
+    0%{top: 0px}
+    50%{top: -50px}
+    100%{top: 0px}
 }
 
 .right-icons {
     right: 0;
     clip-path: polygon(50% 0%,
-                  100% 0%,
-                  100% 100%,
-                50% 100%);
+        100% 0%,
+        100% 100%,
+        50% 100%);
+    animation: iconsAnimationRevert 8s ease-in-out ;
+    animation-iteration-count: infinite;
 }
+
 
 .center-content{
     display: flex;
@@ -129,8 +146,20 @@
     width: 100%;
 }
 
+.sponsorships-list li {
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 10px;
+}
 
 .sponsorships-list li img{
     width: 85px;
     height: 45px;
+    transition: all 0.5s;
+}
+
+.sponsorships-list li img:hover{
+    filter: brightness(140%);
+    width: 100px;
+    height: 50px;
 }

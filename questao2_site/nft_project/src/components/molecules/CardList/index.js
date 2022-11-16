@@ -4,7 +4,7 @@ import "./style.css";
 
 const CardList = ({ cards }) => {
     return (
-        <div className="card-row">
+        <div className="card-row" style={{width:cards.l}}>
             {cards.map((item, key) => (
                 <Card key={key} cardData={item} />
 

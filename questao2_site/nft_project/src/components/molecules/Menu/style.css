@@ -17,6 +17,11 @@ nav {
     line-height: 1.25rem;
     letter-spacing: 0.0125rem;
     cursor: pointer;
+    transition: all 0.4s;
+}
+
+.menu li:hover {
+    color: white;
 }
 
 .buttons {

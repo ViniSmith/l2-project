@@ -48,6 +48,8 @@ button{
 
 img {
     user-select: none;
+    display: block;
+    max-width: 100%;
 }
 
 body *::selection{
