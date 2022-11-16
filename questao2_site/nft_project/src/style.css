@@ -1,10 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600&display=swap');
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #e4e6ff;
+    background-color: #060714;
     font-family: 'Sora';
 }
 
@@ -15,4 +34,12 @@ h1, h2, h3, h4, h5, h6 {
 
 li {
     list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+button{
+    font-family: 'Sora', 'sans-serif';
 }
