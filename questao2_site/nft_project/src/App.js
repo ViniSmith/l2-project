@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/organisms/Header';
 import CardSection from './components/organisms/CardSection';
+import LearnMoreSection from './components/organisms/LearnMoreSection';
+
 
 function App() {
   
@@ -8,6 +10,7 @@ function App() {
     <div>
       <Header/>
       <CardSection/>
+      <LearnMoreSection/>
     </div>
   );
 }

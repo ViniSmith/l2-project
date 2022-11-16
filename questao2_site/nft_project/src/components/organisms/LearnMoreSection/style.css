@@ -1,0 +1,49 @@
+.learn-section {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+}
+.learn-content {
+    display: grid;
+    grid-template-areas: 
+    "text image";
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 10vw 200px 10vw;
+}
+
+.text-content {
+    text-align: left;
+    grid-area: text;
+    margin-top: 120px;
+}
+
+.text-content p{
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #7780A1;
+    font-size: 1rem;
+}
+
+
+.img-content {
+    grid-area: image;
+}
+
+.learn-title {
+    display: block;
+    color: white;
+    font-size: 4rem;
+    line-height: 100%;
+}
+
+.subtitle-learn {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.buttons-learn{
+    margin-top: 60px;
+    display: flex;
+    gap: 10px;
+}
