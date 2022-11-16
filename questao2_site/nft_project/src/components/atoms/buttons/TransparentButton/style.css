@@ -10,4 +10,10 @@
     line-height: 1.25rem;
     letter-spacing: 0.0125em;
     cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+.transparent:hover{
+    border-color: #7780A1;
 }
