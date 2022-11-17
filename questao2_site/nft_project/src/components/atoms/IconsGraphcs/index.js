@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css"
 
-const IconsGraphcs = () => {
+const IconsGraphcs = ({iconsData}) => {
     return (
         <div className="icons-graph">
-            <img src="/images/icon-graph1.svg"/>
-            <h2 className="subtitle-icons">300k</h2>
-            <p>Users Active</p>
+            <img src={`/images/${iconsData.icon}`}/>
+            <h2 className="subtitle-icons">{iconsData.value}</h2>
+            <p>{iconsData.info}</p>
         </div>
     )
 }

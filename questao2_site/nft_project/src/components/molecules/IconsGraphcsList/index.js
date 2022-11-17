@@ -2,10 +2,12 @@ import React from "react";
 import IconsGraphcs from "../../atoms/IconsGraphcs";
 import "./style.css"
 
-const IconsGraphcsList = () => {
+const IconsGraphcsList = ({icons}) => {
     return (
-        <div>
-            <IconsGraphcs/>
+        <div className="icons-row">
+            {icons.map((item, key) => (
+                <IconsGraphcs key={key} iconsData={item}/>
+            ))}
         </div>
     )
 }

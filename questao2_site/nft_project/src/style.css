@@ -57,3 +57,12 @@ body *::selection{
     background-color: #2427c9;
     color: white;
 }
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
+}
+
+.grid-section section {
+    grid-column: 2;
+}

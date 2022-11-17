@@ -11,8 +11,11 @@ function App() {
     <div>
       <Header/>
       <CardSection/>
-      <LearnMoreSection/>
-      <IconsSection/>
+      <div className='grid-section'>
+        <LearnMoreSection/>
+        <section className='divider' style={{marginTop: '150px', marginBottom: '150px'}}></section>
+        <IconsSection/>
+      </div>
     </div>
   );
 }

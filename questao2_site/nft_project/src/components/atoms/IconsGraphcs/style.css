@@ -1,15 +1,21 @@
 .icons-graph {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subtitle-icons {
-    font-size: 48px;
-
+    font-size: 3rem;
 }
 
 .icons-graph p {
     font-family: 'Inter';
     font-weight: 400;
-    color: ;
+    color: #7780A1;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.icons-graph img {
+    margin-bottom: 15px;
 }
