@@ -63,6 +63,6 @@ body *::selection{
     grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
 }
 
-.grid-section section {
+.grid-section section, .grid-section footer {
     grid-column: 2;
 }
