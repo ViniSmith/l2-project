@@ -16,7 +16,7 @@ function App() {
         <LearnMoreSection/>
         <section className='divider divider-learn-more'></section>
         <IconsSection/>
-        {/*<Footer/> */}
+        <Footer/>
       </div>
     </div>
   );
