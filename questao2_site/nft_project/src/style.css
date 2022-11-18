@@ -60,9 +60,13 @@ body *::selection{
 
 .grid-section {
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
+    grid-template-columns: minmax(35px, 1fr) minmax(200px, 1200px) minmax(35px, 1fr);
 }
 
 .grid-section section, .grid-section footer {
     grid-column: 2;
+}
+
+.divider-learn-more {
+    margin: 15vh 0; 
 }

@@ -1,6 +1,22 @@
 .icons-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 920px;
+}
+
+@media(max-width: 800px) {
+    .icons-row {
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+@media(max-width: 500px) {
+    .icons-row{
+        grid-template-columns: 1fr;
+    }
 }

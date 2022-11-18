@@ -14,9 +14,9 @@ function App() {
       <CardSection/> */} 
       <div className='grid-section'>
         <LearnMoreSection/>
-        <section className='divider' style={{marginTop: '150px', marginBottom: '150px'}}></section>
+        <section className='divider divider-learn-more'></section>
         <IconsSection/>
-        <Footer/>
+        {/*<Footer/> */}
       </div>
     </div>
   );
