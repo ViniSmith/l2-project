@@ -7,18 +7,18 @@ import Footer from './components/organisms/Footer';
 
 
 function App() {
-  
+
   return (
-    <div>
-      {/*<Header/>
-      <CardSection/> */} 
+    <>
+      <Header />
+      <CardSection />
       <div className='grid-section'>
-        <LearnMoreSection/>
-        <section className='divider divider-learn-more'></section>
-        <IconsSection/>
-        <Footer/>
+        <LearnMoreSection />
+        <section className='divider-learn-more'></section>
+        <IconsSection />
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }
 

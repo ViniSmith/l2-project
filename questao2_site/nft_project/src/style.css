@@ -2,6 +2,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Sora:wght@600&display=swap');
 
+
+:root {
+    --black: #060714;
+    --dark-gray: #262840;
+    --transparent-gray: #262840CC;
+    --blue: #2427c9;
+    --warm-blue: #4745D0;
+    --ultramarine-blue: #514CFF;
+    --transparent-ultramarine-blue: #514cff26;
+    --white: #fff;
+    --steel: #7780A1;
+    --transparent: rgba(255,255,255,0);
+    --transparent-black: rgba(0, 0, 0, 0.1);
+    --transparent-white: rgba(255, 255, 255, 0.1);
+    --transparent-dark: #060714f6;
+
+    --short-letter-spacing: 0.0125rem; /* 0.2px */
+
+    --font-display: 7.5rem; /* 120px */
+    --line-height-display: 7.5rem; /* 120px */
+
+    --font-subtitle-uppercase: 0.9375rem; /* 15px */
+    --line-height-subtitle-uppercase: 1.125rem; /* 18px */
+    --letter-spacing-subtitle-uppercase: 0.1875rem; /* 3px */
+
+    --font-subtitle-lowercase: 1.5rem; /* 15px */
+    --line-height-subtitle-lowercase: 2.25rem; /* 18px */
+
+    --font-h1: 4rem; /* 64px */
+    --line-height-h1: 4rem; /* 64px */
+
+    --font-h2: 3rem; /* 48px */
+    --line-height-h2: 3.45rem; /* 55.2px */
+
+    --font-h3: 2.5rem; /* 40px */
+    --line-height-h3: 3.125rem; /* 50px */
+
+    --font-h4: 2.25rem; /* 36px */
+    --line-height-h4: 2.835rem; /* 45.36px */
+
+    --font-h5: 2rem; /* 32px */
+    --line-height-h5: 2.5rem; /* 40 */
+    
+    --font-h6: 1.25rem; /* 20px */
+    --line-height-h6: 1.5625rem; /* 25px */
+
+    --font-h8:  0.8125rem; /* 13px */
+    --line-height-h8: 1rem; /* 16px */
+
+    --font-body-medium: 1rem; /* 16px */
+    --line-height-body-medium: 1.25rem; /* 20px */
+
+    --font-body-normal: 0.875rem; /* 14px */
+    --line-height-body-normal: 1.25rem; /* 20px */
+
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,7 +82,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
     margin: 0;
     padding: 0;
-    background-color: #060714;
+    background-color: var(--black);
     font-family: 'Sora';
     overflow-x: hidden;
 }
@@ -32,7 +90,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--white);
 }
 
 li {
@@ -54,13 +112,18 @@ img {
 }
 
 body *::selection{
-    background-color: #2427c9;
-    color: white;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+body a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .grid-section {
     display: grid;
-    grid-template-columns: minmax(35px, 1fr) minmax(200px, 1200px) minmax(35px, 1fr);
+    grid-template-columns: minmax(15px, 1fr) minmax(200px, 1200px) minmax(15px, 1fr);
 }
 
 .grid-section section, .grid-section footer {
@@ -69,4 +132,12 @@ body *::selection{
 
 .divider-learn-more {
     margin: 15vh 0; 
+    border-top: 1px solid var(--dark-gray);
+    margin: 20vh 0;
+}
+
+@media (max-width: 600px) {
+    .divider-learn-more {
+        margin: 15vh 0;
+    }
 }

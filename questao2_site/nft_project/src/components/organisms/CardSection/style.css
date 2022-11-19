@@ -1,8 +1,22 @@
 .title-section {
-    font-size: 36px;
-    margin: 100px 0px 30px;
+    font-size: var(--font-h4);
+    line-height: var(--line-height-h4);
+    letter-spacing: var(--short-letter-spacing);
+    margin: 100px auto 30px auto;
     text-align: center;
     display: block;
-    color: white;
+    color: var(--white);
     padding-bottom: 50px;
+}
+
+.card-section {
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    .title-section {
+        font-size: var(--font-h5);
+        line-height: var(--line-height-h5);
+        letter-spacing: var(--short-letter-spacing);
+    }
 }

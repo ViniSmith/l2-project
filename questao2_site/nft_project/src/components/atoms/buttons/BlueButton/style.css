@@ -1,18 +1,28 @@
 .blue {
-    color: white;
-    background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
-    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    background: linear-gradient(104.42deg, var(--warm-blue) 0%, var(--blue) 60.23%);
+    box-shadow: inset -4px -4px 4px var(--transparent-black), inset 4px 4px 4px var(--transparent-white);
     border-radius: 12px;
-    width: 145px;
-    height: 52px;
+    padding: 16px 24px;
     font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.0125em;
+    font-size: var(--font-body-medium);
+    line-height: var(--line-height-body-medium);
+    letter-spacing: var(--short-letter-spacing);
     cursor: pointer;
     transition: all .4s;
+    border: none;
+    outline: none;
 }
 
 .blue:hover{
     filter: brightness(130%);
+}
+
+@media (max-width: 700px) {
+    .blue{
+        font-size: var(--font-body-normal);
+        line-height: var(--line-height-body-normal);
+        letter-spacing: var(--short-letter-spacing);
+        padding: 10px 12px;
+    }
 }

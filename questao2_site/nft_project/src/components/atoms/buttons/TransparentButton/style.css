@@ -1,19 +1,27 @@
 .transparent {
-    color: #7780A1;
-    background: transparent;
-    width: 117px;
-    height: 52px;
-    border: 2px solid #262840;
+    color: var(--steel);
+    background: var(--transparent);
+    padding: 16px 24px;
+    border: 2px solid var(--dark-gray);
     border-radius: 12px;
     font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.0125em;
+    font-size: var(--font-body-medium);
+    line-height: var(--line-height-body-medium);
+    letter-spacing: var(--short-letter-spacing);
     cursor: pointer;
     transition: all 0.4s;
-
+ 
 }
 
-.transparent:hover{
-    border-color: #7780A1;
+.transparent:hover {
+    border-color: var(--steel);
+}
+
+@media (max-width: 700px) {
+    .transparent {
+        font-size: var(--font-body-normal);
+        line-height: var(--line-height-body-normal);
+        letter-spacing: var(--short-letter-spacing);
+        padding: 10px 12px;
+    }
 }

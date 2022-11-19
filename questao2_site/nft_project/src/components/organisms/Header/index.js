@@ -3,13 +3,13 @@ import Menu from "../../molecules/Menu";
 import "./style.css";
 
 const Header = () => {
-    return(
+    return (
         <header className="header">
-            <Menu/>
+            <Menu />
             <div className="content-container">
                 <div className="content">
-                    <img className="NFT-icons left-icons" src="images/iconsH.png" alt="NFT icons"/>
-                    <img className="NFT-icons right-icons" src="images/iconsH.png" alt="NFT icons"/>
+                    <img className="NFT-icons left-icons" src="images/iconsH.png" alt="NFT icons" />
+                    <img className="NFT-icons right-icons" src="images/iconsH.png" alt="NFT icons" />
                     <div className="center-content">
                         <h2 className="subtitle subtitle-uppercase">Non Fungible Tokens</h2>
                         <div className="titles-container">
@@ -26,14 +26,14 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-                <div className="sponsorships">
-                    <ul className="sponsorships-list">
-                        <li><img src="images/logo-ritter.svg" alt="ritter"></img></li>
-                        <li><img src="images/logo-nike.svg" alt="nike"></img></li>
-                        <li><img src="images/logo-adidas.svg" alt="adidas"></img></li>
-                        <li><img src="images/logo-newholland.svg" alt="newholland"></img></li>
-                    </ul>
-                </div>
+            <div className="sponsorships">
+                <ul className="sponsorships-list">
+                    <li><a href="https://ritter-sport.com" target="_blank" rel="noreferrer"><img src="images/logo-ritter.svg" alt="ritter"></img></a></li>
+                    <li><a href="https://nike.com.br" target="_blank" rel="noreferrer"><img src="images/logo-nike.svg" alt="nike"></img></a></li>
+                    <li><a href="https://adidas.com.br" target="_blank" rel="noreferrer"><img src="images/logo-adidas.svg" alt="adidas"></img></a></li>
+                    <li><a href="https://newholland.com.br" target="_blank" rel="noreferrer"><img src="images/logo-newholland.svg" alt="newholland"></img></a></li>
+                </ul>
+            </div>
         </header>
     )
 }

@@ -5,14 +5,18 @@
 }
 
 .subtitle-icons {
-    font-size: 3rem;
+    font-size: var(--font-h2);
+    line-height: var(--line-height-h2);
+    letter-spacing: var(--short-letter-spacing);
 }
 
 .icons-graph p {
     font-family: 'Inter';
     font-weight: 400;
-    color: #7780A1;
-    font-size: 1rem;
+    color: var(--steel);
+    font-size: var(--font-body-medium);
+    line-height: var(--line-height-body-medium);
+    letter-spacing: var(--short-letter-spacing);
     margin-top: 5px;
 }
 

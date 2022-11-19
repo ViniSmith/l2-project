@@ -2,10 +2,10 @@
     display: grid;
     max-width: 1400px;
     max-height: 400px;
-    grid-template-areas: 
-    "logo menu text"
-    "logo button text"
-    "terms social input";
+    grid-template-areas:
+        "logo menu text"
+        "logo button text"
+        "terms social input";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
     margin-bottom: 5vw;
@@ -27,7 +27,7 @@
     max-width: 213px;
 }
 
-.menu-list-container{
+.menu-list-container {
     grid-area: menu;
     border-top: 1px solid #262840;
     padding-top: 50px;
@@ -42,7 +42,15 @@
     font-size: 1rem;
 }
 
-.text-container{
+.menu-list-container ul li {
+    transition: all 0.3s;
+}
+
+.menu-list-container ul li:hover {
+    color: var(--steel);
+}
+
+.text-container {
     grid-area: text;
     font-family: 'Inter';
     font-weight: 400;
@@ -58,8 +66,6 @@
 
 .button-container {
     grid-area: button;
-    border-left: 1px solid #262840;
-    border-right: 1px solid #262840;
     padding-top: 40px;
     padding-bottom: 70px;
     padding-left: 50px;
@@ -77,17 +83,19 @@
 .terms-list-container ul {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    height: 100%;
 }
 
-.terms-list-container ul li{
+.terms-list-container ul li {
     font-family: 'inter';
     font-weight: 400;
     font-size: 0.875rem;
     color: #7780A1;
+    margin-top: auto;
+    transition: all 0.3s;
 }
 
-.social-media-container{
+.social-media-container {
     grid-area: social;
     border-bottom: 1px solid #262840;
     padding-left: 50px;
@@ -97,8 +105,20 @@
 
 .social-media-container ul {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.social-media-container ul li {
+    margin-top: auto;
+    transition: all 0.3s;
+}
+
+.social-media-container ul li:hover,
+.terms-list-container ul li:hover {
+    filter: brightness(200%);
 }
 
 
@@ -136,7 +156,7 @@
     padding: 50px;
 }
 
-.box-footer:nth-child(2){
+.box-footer:nth-child(2) {
     border-left: none;
     border-right: none;
 }
@@ -160,12 +180,150 @@
     outline: none;
 }
 
-.input-footer::placeholder{
+.input-footer::placeholder {
     color: #7780A1;
 }
 
 
 
 @media(max-width: 1100px) {
+    .container-footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+        grid-template-areas:
+            "logo button"
+            "menu menu"
+            "text text"
+            "input input"
+            "terms social";
+        padding: 50px;
+        gap: 20px;
+        border: 1px solid #262840;
+        max-height: 440px;
 
+    }
+
+    .container-footer div {
+        border: none;
+        padding: 0px;
+    }
+
+    .logo-container {
+        margin-bottom: 40px;
+    }
+
+    .text-container {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .terms-list-container ul {
+        justify-content: space-between;
+    }
+
+    .social-media-container ul {
+        justify-content: end;
+    }
+
+    .menu-list-container ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 700px) {
+    .container-footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo button"
+            "menu menu"
+            "text text"
+            "input input"
+            "social social"
+            "terms terms";
+        padding: 50px;
+        gap: 20px;
+        border: 1px solid #262840;
+    }
+
+
+    .social-media-container ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 600px) {
+    .container-footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr 3fr 2fr 1fr 1fr;
+        grid-template-areas:
+            "logo"
+            "menu"
+            "button"
+            "text"
+            "input"
+            "social"
+            "terms";
+        padding: 20px;
+        gap: 20px;
+        border: 1px solid #262840;
+        max-height: fit-content;
+    }
+
+    .logo-container {
+        margin-bottom: 0px;
+    }
+
+    .menu-list-container ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .button-container {
+        margin: auto auto;
+    }
+
+    .text-container {
+        text-align: left;
+        margin-bottom: 0;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .text-container p {
+
+        margin-top: auto;
+    }
+
+    .terms-list-container ul {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .input-footer-container {
+        margin: auto 0
+    }
+
+    .input-footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .input-footer-container {
+        grid-template-columns: 1fr 80px;
+    }
 }

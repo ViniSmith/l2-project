@@ -7,38 +7,38 @@ const Footer = () => {
     return (
         <footer className="container-footer">
             <div className="logo-container">
-                <img src="/images/logo-footer.png" alt="logo-footer"/>
+                <img src="/images/logo-footer.png" alt="logo-footer" />
             </div>
             <div className="terms-list-container">
                 <ul>
-                    <li>Support</li>
-                    <li>Term of service</li>
-                    <li>License</li>
+                    <li><a href="#" target="_blank">Support</a></li>
+                    <li><a href="#" target="_blank">Term of service</a></li>
+                    <li><a href="#" target="_blank">License</a></li>
                 </ul>
             </div>
             <div className="menu-list-container">
                 <ul className="itens-footer">
-                    <li>Auctions</li>
-                    <li>Roadmap</li>
-                    <li>Discover</li>
-                    <li>Community</li>
+                    <li><a href="#" target="_blank">Auctions</a></li>
+                    <li><a href="#" target="_blank">Roadmap</a></li>
+                    <li><a href="#" target="_blank">Discover</a></li>
+                    <li><a href="#" target="_blank">Community</a></li>
                 </ul>
             </div>
             <div className="button-container">
-                <BlueButton text={"My account"}/>
+                <BlueButton text={"My account"} />
             </div>
             <div className="social-media-container">
                 <ul>
-                    <li><img src="/images/redes-sociais/facebook.svg" alt="facebook"/></li>
-                    <li><img src="/images/redes-sociais/linkedin.svg" alt="linkedin"/></li>
-                    <li><img src="/images/redes-sociais/github.svg" alt="github"/></li>
-                    <li><img src="/images/redes-sociais/twitter.svg" alt="twitter"/></li>
-                    <li><img src="/images/redes-sociais/instagram.svg" alt="instagram"/></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><img src="/images/redes-sociais/facebook.svg" alt="facebook" /></a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"><img src="/images/redes-sociais/linkedin.svg" alt="linkedin" /></a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noreferrer"><img src="/images/redes-sociais/github.svg" alt="github" /></a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noreferrer"><img src="/images/redes-sociais/twitter.svg" alt="twitter" /></a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="/images/redes-sociais/instagram.svg" alt="instagram" /></a></li>
                 </ul>
             </div>
 
             <div className="text-container">
-                <p>Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, 
+                <p>Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit,
                     sed egestas in. Id nam semper dolor tellus vulputate eget turpis. </p>
             </div>
             <div className="input-footer-container">

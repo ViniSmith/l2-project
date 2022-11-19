@@ -1,20 +1,21 @@
 
 .card-content {
     display: grid;
+    max-width: 440px;
     width: 40vw;
-    max-width: 400px;
-    border: 1px solid #262840;
+    border: 1px solid var(--dark-gray);
     border-radius: 20px;
     padding: 24px;
-    color: white;
+    color: var(--white);
     justify-self: stretch;
     align-content: stretch;
     grid-template-rows: 5fr 160px 40px 60px;
 }
 
 .card-img {
-    max-width: 100%;
+    max-width: 400px;
     width: 20vw;
+    margin: 0 auto;
 }
 
 @media (max-width: 1500px)
@@ -31,7 +32,9 @@
     }
 }
 
-.card-img img {
+.card-img img{
+    display: block;
+    max-width: 100%;
     border-radius: 20px;
 }
 
@@ -47,15 +50,18 @@
 }
 
 .timer {
-    grid-area: timer;
     display: flex;
     align-items: center;
     font-family: 'Inter';
+    grid-area: timer;
 }
+
 
 .description {
     grid-area: description;
-    font-size: 1.25rem;
+    font-size: var(--font-h6);
+    line-height: var(--line-height-h6);
+    letter-spacing: var(--short-letter-spacing);
 }
 
 .coin {
@@ -64,14 +70,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.0125rem;
-    color: #514CFF;
-    height: 36px;
+    margin: auto 0;
+    font-size: var(--font-body-medium);
+    line-height: var(--line-height-body-medium);
+    letter-spacing: var(--short-letter-spacing);
+    color: var(--ultramarine-blue);
+    background:  var(--transparent-ultramarine-blue);
     padding: 8px 14px;
     border-radius: 4px;
-    background: rgba(81, 76, 255, 0.15);
+    width: fit-content;
+    height: fit-content;
 }
 
 .footer-card {
@@ -79,11 +87,13 @@
     gap: 16px;
     padding-left: 0px;
     align-items: center;
+    
 }
 
 .divider {
-    border-top: 1px solid #262840;
+    border-top: 1px solid var(--dark-gray);
     margin: 20px 0 20px;
+    max-width: 440px;
 }
 
 .avatar {
@@ -91,7 +101,6 @@
     align-items: center;
     align-content: center;
 }
-
 .avatar li + li {
     margin-left: -10px;
 }
@@ -99,19 +108,144 @@
 .footer-card {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: stretch;
     max-width: 440px;
 }
 
 .footer-card p, .footer-card span {
     font-family: 'Inter';
     font-weight: 400;
-    letter-spacing: 0.0125rem;
-    font-size: 0.875rem;
+    font-size: var(--font-body-normal);
+    line-height: var(--line-height-body-normal);
+    letter-spacing: var(--short-letter-spacing);
     display: flex;
     align-items: center;
 }
 
 .icon {
     margin-right: 5px;
+}
+
+.heart-icon {
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+    .card-content, .card-info, .divider, .footer-card, .card-img {
+        max-width: 236px;
+        
+    }
+
+    .footer-card {
+        justify-content: space-between;
+    }
+
+    .description {
+        font-size: var(--font-body-medium);
+        line-height: var(--line-height-body-medium);
+        letter-spacing: var(--short-letter-spacing);
+        padding-bottom: 5px;
+    }
+
+    .min-left, .likes-number, .avatar{
+        display: none !important;
+    }
+
+    
+    .card-info {
+        grid-template-areas:
+        "description description description"
+        "timer timer coin";
+    }
+
+    .card-content {
+        grid-template-rows: 5fr 100px 30px 25px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 710px) {
+    .card-content {
+        max-width: 400px;
+        max-height: 220px;
+    }
+
+    .card-info, .divider, .footer-card{
+        max-width: 100%;
+    }
+
+    .description {
+        padding: 5px 0;
+    }
+
+    .coin {
+        padding: 6px 10px;
+        font-size: var(--font-h8);
+        line-height: var(--line-height-h8);
+        letter-spacing: var(--short-letter-spacing);
+        margin-left: auto;
+    }
+
+    .divider{
+        display: none !important;
+    }
+
+    
+    .card-info {
+        grid-row: 1;
+        margin: 0;
+    }
+
+    .card-content {
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: minmax(40px, 135px) 2fr;
+        width: calc(100vw - 50px);
+        padding: 15px;
+    }
+
+    .card-img {
+        grid-column: 1;
+        grid-row: 1/4;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    div.card-row {
+        max-width: inherit;
+        justify-content: flex-start;
+        padding: 0px 10px;
+        overflow-x: hidden;
+    }
+
+    .card-info,  .footer-card{
+        grid-column: 2;
+        
+    }
+
+    .footer-card {
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 350px) {
+    .card-info {
+        grid-template-areas:
+        "description description description"
+        "timer timer timer"
+        "coin coin coin";
+    }
+
+    .coin {
+        margin-right: auto;
+        margin-left: inherit;
+    }
 }

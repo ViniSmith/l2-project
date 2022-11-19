@@ -10,7 +10,7 @@ const LearnMoreSection = () => {
                 <div className="text-content">
                     <h3 className="subtitle subtitle-uppercase subtitle-learn">Overline</h3>
                     <h2 className="learn-title">Sapien ipsum scelerisque convallis fusce</h2>
-                    <p>Ut amet vulputate faucibus vitae semper eget auctor. 
+                    <p>Ut amet vulputate faucibus vitae semper eget auctor.
                         Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.</p>
                     <div className="buttons-learn">
                         <BlueButton text={"Get Started"}/>
@@ -20,7 +20,7 @@ const LearnMoreSection = () => {
                 <div className="img-content">
                     <img src="/images/img-learn-section.png" alt="learn more"></img>
                 </div>
-                
+
             </div>
         </section>
     )
